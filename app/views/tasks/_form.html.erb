@@ -1,6 +1,12 @@
+<div class='container'>
+<form>
 <%= simple_form_for(@task) do |f| %>
   <%= f.input :title %>
   <%= f.input :detail %>
+  <div class="form-group form-check">
   <%= f.input :completed %>
-  <%= f.submit %>
+  </div>
+  <%= f.submit 'Submit', class: 'btn btn-primary btn-block'%>
 <% end %>
+</form>
+</div>
